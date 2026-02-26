@@ -1,0 +1,8 @@
+{
+  "builds": [
+    { "src": "/api/*.py", "use": "@vercel/python" }
+  ],
+  "redirects": [
+    { "source": "/api/:route", "destination": "http://localhost:8000/api/:route" }
+  ]
+}

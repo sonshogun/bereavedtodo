@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // Fetch data from the FastAPI endpoint
-    fetch('http://localhost:8000/api/hello')
+    fetch('/api/hello')
       .then(response => response.json())
       .then(data => setMessage(data.message))
       .catch(error => console.error('Error fetching data:', error));

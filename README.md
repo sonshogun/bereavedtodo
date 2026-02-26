@@ -1,38 +1,30 @@
-### Information Hierarchy
-## State-specific laws about inheritance and probate
+# Build Instructions
 
+##  First need to install npm 
 
-## Resolving the Estate
-* What is handled outside the estate
-    * Change names on JTWROS property
-    * Transfer joint/JTWROS bank accounts
-    * Transfer any accounts with direct beneficiaries named (banks, brokerages, etc)
-    * Life/funeral/etc Insurance Policies
-    * Apply for funds for named beneficiaries
-* What is handled as part of the estate
-    * Is there a will? Probate: administrator vs executor
-    * You need to go to surrogate’s court regardless
-    * Taxes
-    * File taxes on half of the deceased
-    * State and federal tax codes on estate or inheritance tax
+    https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/
+    
+    and Install Vercel Globally 
 
+    ```npm install -g vercel```
 
-* Logistics that help you handle this process
-    * Get access to the phone!
-    * 2-step verifications, a*uthenticator app, etc
-    * Get access to password management app
-    * Get email access (if no password, there’s sometimes TOD settings after a period of inactivity, 3 months by default)
+## Second we need to independently start the python backend ( will default at 8000 )
 
-* Maintaining the decedent’s residence - transferring or continuing ownership on:
-    * Bills 
-    * Fire/flood insurance
-    * Auto registration
-    * Medical Insurance
-    * Finances
-    * Creditors/Debtors
-    * Notify
-    * Financial Aid
-    * Notify FA offices for any kids to see if they make any affordances
-    * Death Benefits (SSA, VA, Employer/Former employer/union/etc)
-    * Apply
-    * Banks, Safe Deposit boxes, Investments
+    From the api folder unde fastapi-react-app ( in a seperate admin powershell )
+
+        ```python3 -m venv venv 
+        .\venv\Scripts\activate.ps1```
+
+        Then in the virtual environment 
+
+        ```pip install -r  .\requirements.txt```
+        
+        And finally to run 
+
+        ```uvicorn index:app --reload```
+
+## Third we get the front end running ( much quicker we use Vercel )
+
+    From the fastapi-react-app folder run 
+
+    ```vercel dev --local-config vercel.local.json --debug```
