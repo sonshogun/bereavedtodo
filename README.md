@@ -4,7 +4,7 @@
 
     https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/
     
-    and Install Vercel Globally 
+    and Install Vercel globally 
 
     ```npm install -g vercel```
 
