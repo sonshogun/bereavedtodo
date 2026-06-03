@@ -1,4 +1,4 @@
-# Build Instructions
+# Build Instructions Now with Claude Code
 
 ##  First need to install npm 
 
